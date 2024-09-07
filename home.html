@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Commands</title>
+    <link rel="icon" href="image.png" type="image/png">
+    <link rel="stylesheet" href="home.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <h1><a href="#">git cheat sheet</a> </h1>
+    </header>
+    <main id="main">
+        <nav>
+            <div id="setupshow">Setup and Configuration</div>
+            <div id="reposhow">Respository Management</div>
+            <div id="basicshow">Basic File Operations</div>
+            <div id="commitshow">Committing Changes</div>
+            <div id="gitshow">Git Branching</div>
+            <div id="mergeshow">Merging and Rebasing</div>
+            <div id="pullshow">Pulling and Pushing</div>
+            <div id="stashshow">Stashing Changes</div>
+            <div id="undoingshow">Undoing Changes</div>
+            <div id="logshow">Logs and History</div>
+            <div id="remoteshow">Remote Repositories</div>
+            <div id="taggingshow">Tagging</div>
+            <div id="usefulshow">Other Usefull Commands</div>
+            <div id="submoduleshow">Collaboration and Submodules</div>
+            <div id="commandshow">List all Command</div>
+        </nav>
+        <div id="content">
+            <div id="content-main">
+                <div id="setup">
+                    <h1>Setup and Configuration</h1>
+                    <ul>
+                        <li>
+                            <h4>Configure user name:</h4>
+                            <div  id="code1">
+                                <code>git config --global user.name "Your Name"</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Configure user email:</h4>
+                            <div  id="code2">
+                                <code>git config --global user.email "Your email@example.com"</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Check configuration:</h4>
+                            <div  id="code3">
+                                <code>git config --list</code>
+                            </div>
+                        </li>                            
+                    </ul>
+                </div>
+    
+                <div id="repo">
+                    <h1>Respository Management</h1>
+                    <ul>
+                        <li>
+                            <h4>Initialize a new repository:</h4>
+                            <div  id="code4">
+                                <code>git init</code>
+                            </div>
+                        </li>
+                               
+                        <li>
+                            <h4>Clone a remote repository:</h4>
+                            <div  id="code5">
+                                <code>git clone https://github.com/username/repository.git</code>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div id="basic">
+                    <h1>Basic File Operations</h1>
+                    <ul>
+                        <li>
+                            <h4>Check the status of the files:</h4>
+                            <div  id="code6">
+                                <code>git status</code>
+                            </div>
+                        </li>
+                               
+                        <li>
+                            <h4>Track new files:</h4>
+                            <div  id="code7">
+                                <code>git add filename</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Add all changes:</h4>
+                            <div  id="code8">
+                                <code>git add .</code> <i>or</i><br><br>
+                                <code>git add --all</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Remove a file:</h4>
+                            <div  id="code9">
+                                <code>git rm filename</code>
+                            </div>
+                        </li>                            
+                    </ul>
+                </div>
+    
+                <div id="commit">
+                     <h1>Committing Changes</h1>
+                    <ul>
+                        <li>
+                            <h4>Commit with a message:</h4>
+                            <div  id="code10">
+                                <code>git commit -m "Commit message</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Amend the last commit:</h4>
+                            <div  id="code11">
+                                <code>git commit --amend</code>
+                            </div>
+                        </li>                            
+                    </ul>
+                </div>
+                    
+                <div id="git">
+                    <h1>Git Branching</h1>
+                    <ul>
+                        <li>
+                            <h4>Create a new branch:</h4>
+                            <div  id="code12">
+                                <code>git branch branch-name</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>List all branches:</h4>
+                            <div  id="code13">
+                                <code>git branch</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Switch to a branch:</h4>
+                            <div  id="code14">
+                                <code>git checkout branch-name</code>
+                            </div>
+                        </li>
+                                
+                        <li>
+                            <h4>Create and switch to a new branch:</h4>
+                            <div id="code15">
+                                <code>git checkout -b branch-name</code>
+                            </div>
+                        </li>
+                                
+                        <li>
+                            <h4>Delete a branch:</h4>
+                            <div id="code16">
+                                <code>git branch -d branch-name</code>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div id="merge">
+                    <h1>Merging and Rebasing</h1>
+                    <ul>
+                        <li>
+                            <h4>Merge a branch into the current branch:</h4>
+                            <div id="code17">
+                                <code>git merge branch-name</code>
+                            </div>
+                        </li>
+                                
+                        <li>
+                            <h4>Rebase the current branch onto another:</h4>
+                            <div id="code18">
+                                <code>git rebase branch-name</code>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div id="pull">
+                    <h1>Pulling and Pushing</h1>
+                    <ul>
+                        <li>
+                            <h4>Pull changes from a remote repository:</h4>
+                            <div id="code19">
+                                <code>git pull origin branch-name</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Push changes to a remote repository:</h4>
+                            <div id="code20">
+                                <code>git push origin branch-name</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Push a new branch:</h4>
+                            <div id="code21">
+                                <code>git push -u origin branch-name</code>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div id="stash">
+                    <h1>Stashing Changes</h1>
+                    <ul>
+                        <li>
+                            <h4>Stash changes:</h4>
+                            <div id="code22">
+                                <code>git stash</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>List stashes:</h4>
+                            <div id="code23">
+                                <code>git stash list</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Apply stash:</h4>
+                            <div id="code24">
+                                <code>git stash apply</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Drop a stash:</h4>
+                            <div id="code25">
+                                <code>git stash drop</code>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div id="undoing">
+                    <h1>Undoing Changes</h1>
+                    <ul>
+                        <li>
+                            <h4>Undo changes in a file(before committing):</h4>
+                            <div id="code26">
+                                <code>git checkout -- filename</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Unstage changes:</h4>
+                            <div id="code27">
+                                <code>git reset HEAD filename</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Revert a commit:</h4>
+                            <div id="code28">
+                                <code>git revert commit-hash</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Reset a branch to a previous commit:</h4>
+                            <div id="code29">
+                                <code>git reset --hard commit-hash</code>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div id="logs">  
+                    <h1>Logs and History</h1>
+                    <ul>
+                        <li>
+                            <h4>View commit history:</h4>
+                            <div id="code30">
+                                <code>git log</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>View a compact log:</h4>
+                            <div id="code31">
+                                <code>git log --oneline</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>View differences between commits:</h4>
+                            <div id="code32">
+                                <code>git diff</code>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div id="remote">
+                    <h1>Remote Repositories</h1>  
+                    <ul>
+                        <li>
+                            <h4>Add a remote repository:</h4>
+                            <div id="code33">
+                                <code>git remote add origin https://github.com/username/repo.git</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>View remote repositories:</h4>
+                            <div id="code34">
+                                <code>git remote -v</code>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <h4>Remove a remote:</h4>
+                            <div id="code35">
+                                <code>git remote remove origin</code>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div id="tagging">
+                    <h1>Tagging</h1>
+                    <ul>
+                        <li>
+                            <h4>Create a tag: </h4>
+                            <div id="code36">
+                                <code>git tag tag-name</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Push a tag:</h4>
+                            <div id="code37">
+                                <code>git push origin tag-name</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Delete a tag:</h4>
+                            <div id="code38">
+                                <code>git tag -d tag-name</code>
+                            </div>
+                        </li>                            
+                    </ul>
+                </div>
+    
+                <div id="useful">
+                    <h1>Other Usefull Commands</h1> 
+                    <ul>
+                        <li>
+                            <h4>Check differences between commits and working directory:</h4>
+                            <div id="code39">
+                                <code>git diff commit-hash</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>List files that have been changed:</h4>
+                            <div id="code40">
+                                <code>git ls-files -m</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Show changes in a specific file:</h4>
+                            <div id="code42">
+                                <code>git show commit-hash:filename</code>
+                            </div>
+                        </li>                            
+                    </ul>
+                </div>
+    
+                <div id="submodules">
+                    <h1>Collaboration and Submodules</h1>
+                    <ul>
+                        <li>
+                            <h4>Add a submodule:</h4>
+                            <div id="code43">
+                                <code>git submodule add https://github.com/username/repo.git</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Initialize submodules:</h4>
+                            <div id="code44">
+                                <code>git submodule init</code>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <h4>Update submodule:</h4>
+                            <div id="code45">
+                                <code id="code">git submodule update</code>
+                            </div>
+                        </li>                            
+                    </ul>
+                </div>
+            </div>
+            <div id="allcommands">
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        &copy;<b id="getYear"></b> <a href="https://wilfredtinega.netlify.app">Wilfred Tinega</a>
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>
